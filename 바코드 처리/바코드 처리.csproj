@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{55CE8DCB-A955-4C2E-8925-4323341148FB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>바코드_처리</RootNamespace>
+    <AssemblyName>바코드 처리</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AForge.Controls">
+      <HintPath>.\AForge.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video">
+      <HintPath>.\AForge.Video.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video.DirectShow">
+      <HintPath>.\AForge.Video.DirectShow.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="zxing">
+      <HintPath>.\zxing.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WIFI - QR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WIFI - QR.Designer.cs">
+      <DependentUpon>WIFI - QR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="메시지 - QR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="메시지 - QR.Designer.cs">
+      <DependentUpon>메시지 - QR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="스케줄 - QR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="스케줄 - QR.Designer.cs">
+      <DependentUpon>스케줄 - QR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="연력처 - QR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="연력처 - QR.Designer.cs">
+      <DependentUpon>연력처 - QR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="위치 - QR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="위치 - QR.Designer.cs">
+      <DependentUpon>위치 - QR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="이메일 - QR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="이메일 - QR.Designer.cs">
+      <DependentUpon>이메일 - QR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="전화번호 - QR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="전화번호 - QR.Designer.cs">
+      <DependentUpon>전화번호 - QR.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WIFI - QR.resx">
+      <DependentUpon>WIFI - QR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="메시지 - QR.resx">
+      <DependentUpon>메시지 - QR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="스케줄 - QR.resx">
+      <DependentUpon>스케줄 - QR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="연력처 - QR.resx">
+      <DependentUpon>연력처 - QR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="위치 - QR.resx">
+      <DependentUpon>위치 - QR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="이메일 - QR.resx">
+      <DependentUpon>이메일 - QR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="전화번호 - QR.resx">
+      <DependentUpon>전화번호 - QR.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
