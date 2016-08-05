@@ -137,6 +137,7 @@
             this.comboBox2.Items.AddRange(new object[] {
             "UPC-A",
             "UPC-E",
+            "UPC-EAN-EXTENSION",
             "EAN-13",
             "EAN-8",
             "ITF",
@@ -145,7 +146,13 @@
             "Code 93",
             "MSI",
             "Code 128",
-            "QR Code"});
+            "QR Code",
+            "Data Matrix",
+            "Maxi Code",
+            "PDF 417",
+            "RSS 14",
+            "RSS Expanded",
+            "PLESSEY"});
             this.comboBox2.Location = new System.Drawing.Point(0, 115);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(121, 20);

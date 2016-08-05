@@ -248,7 +248,13 @@ namespace 바코드_처리
                 case "MSI": type = BarcodeFormat.MSI; break;  
                 case "Code 128": type = BarcodeFormat.CODE_128; break;
                 case "QR Code": type = BarcodeFormat.QR_CODE; QR = true; break;
-                    
+                case "Data Matrix": type = BarcodeFormat.DATA_MATRIX; break;
+                case "Maxi Code": type = BarcodeFormat.MAXICODE; break;
+                case "PDF 417": type = BarcodeFormat.PDF_417; break;
+                case "RSS 14": type = BarcodeFormat.RSS_14; break;
+                case "RSS Expanded": type = BarcodeFormat.RSS_EXPANDED; break;
+                case "UPC-EAN-EXTENSION": type = BarcodeFormat.UPC_EAN_EXTENSION; break;
+                case "PLESSEY": type = BarcodeFormat.PLESSEY; break;
                 default:
                     MessageBox.Show("Please specify the encoding type.");
                     break;
